@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios');
 
 const app = express();
-const PORT = 3000;
+const PORT = 'https://okoroaforkelechidivine.github.io/seerbit-subscription';
 
 app.use(express.json()); // Parse JSON request body
 
