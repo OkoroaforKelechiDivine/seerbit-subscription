@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios');
 
 const app = express();
-const PORT = 'https://okoroaforkelechidivine.github.io/seerbit-subscription';
+const PORT = 3000;
 
 app.use(express.json()); // Parse JSON request body
 
@@ -16,10 +16,9 @@ app.use((req, res, next) => {
 app.post('/api/v2/virtual-accounts', async (req, res) => {
     try {
         const response = await axios.post(
-            'https://seerbitapi.com/api/v2/virtual-accounts/',
-            req.body, {
-                headers: req.headers
-            }
+            'https://okoroaforkelechidivine.github.io/seerbit-subscription/api/v2/virtual-accounts',
+            req.body,
+            { headers: req.headers }
         );
         res.json(response.data);
     } catch (error) {
