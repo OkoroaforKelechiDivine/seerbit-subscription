@@ -9,7 +9,7 @@ document.getElementById('virtualAccountForm').addEventListener('submit', functio
         json[key] = value;
     });
 
-    fetch('http://localhost:3000/api/v2/virtual-accounts', {
+    fetch('https://okoroaforkelechidivine.github.io/seerbit-subscription/api/v2/virtual-accounts', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
