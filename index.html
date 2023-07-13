@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<!--SBPUBK_DQ24K6T5TI1WOAOYPWWYMGMHKDRVEGPW-->
+
+<head>
+  <title>Create Virtual Account</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>Create Virtual Account</h1>
+  <form id="virtualAccountForm" action="https://seerbitapi.com/api/v2/virtual-accounts/" method="POST">
+    <label for="publicKey">Public Key:</label>
+    <input type="text" id="publicKey" name="publicKey" required>
+
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required>
+
+    <label for="bankVerificationNumber">Bank Verification Number:</label>
+    <input type="text" id="bankVerificationNumber" name="bankVerificationNumber">
+
+    <label for="currency">Currency:</label>
+    <input type="text" id="currency" name="currency" required>
+
+    <label for="country">Country:</label>
+    <input type="text" id="country" name="country" required>
+
+    <label for="reference">Reference:</label>
+    <input type="text" id="reference" name="reference" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <button type="submit">Create Account</button>
+  </form>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
