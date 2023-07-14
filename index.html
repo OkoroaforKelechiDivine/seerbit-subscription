@@ -1,41 +1,75 @@
 <!DOCTYPE html>
-<html>
-
-<!--SBPUBK_DQ24K6T5TI1WOAOYPWWYMGMHKDRVEGPW-->
-
+<html lang="en">
 <head>
-  <title>Create Virtual Account</title>
   <link rel="stylesheet" type="text/css" href="./styles.css">
+  <title>Subscription</title>
 </head>
 <body>
-<div class="container">
-  <h1>Create Virtual Account</h1>
-  <form id="virtualAccountForm" action="https://seerbitapi.com/api/v2/virtual-accounts/" method="POST">
+
+<h1>Create a Subscription</h1>
+  <form id="subscriptionForm">
     <label for="publicKey">Public Key:</label>
     <input type="text" id="publicKey" name="publicKey" required>
 
-    <label for="fullName">Full Name:</label>
-    <input type="text" id="fullName" name="fullName" required>
+    <label for="paymentReference">Payment Reference:</label>
+    <input type="text" id="paymentReference" name="paymentReference" required>
 
-    <label for="bankVerificationNumber">Bank Verification Number:</label>
-    <input type="text" id="bankVerificationNumber" name="bankVerificationNumber">
+    <label for="planId">Plan ID:</label>
+    <input type="text" id="planId" name="planId">
+
+    <label for="cardNumber">Card Number:</label>
+    <input type="text" id="cardNumber" name="cardNumber" required>
+
+    <label for="expiryMonth">Expiry Month:</label>
+    <input type="text" id="expiryMonth" name="expiryMonth" required>
+
+    <label for="expiryYear">Expiry Year:</label>
+    <input type="text" id="expiryYear" name="expiryYear" required>
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" required>
+
+    <label for="amount">Amount:</label>
+    <input type="text" id="amount" name="amount" required>
 
     <label for="currency">Currency:</label>
     <input type="text" id="currency" name="currency" required>
 
+    <label for="productDescription">Product Description:</label>
+    <input type="text" id="productDescription" name="productDescription" required>
+
+    <label for="productId">Product ID:</label>
+    <input type="text" id="productId" name="productId" required>
+
     <label for="country">Country:</label>
     <input type="text" id="country" name="country" required>
 
-    <label for="reference">Reference:</label>
-    <input type="text" id="reference" name="reference" required>
+    <label for="startDate">Start Date:</label>
+    <input type="text" id="startDate" name="startDate" required>
+
+    <label for="cardName">Card Name:</label>
+    <input type="text" id="cardName" name="cardName" required>
+
+    <label for="billingCycle">Billing Cycle:</label>
+    <input type="text" id="billingCycle" name="billingCycle" required>
+
+    <label for="allowPartialDebit">Allow Partial Debit:</label>
+    <input type="text" id="allowPartialDebit" name="allowPartialDebit" required>
 
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+    <input type="text" id="email" name="email" required>
 
-    <button type="submit">Create Account</button>
+    <label for="mobileNumber">Mobile Number:</label>
+    <input type="text" id="mobileNumber" name="mobileNumber" required>
+
+    <label for="billingPeriod">Billing Period:</label>
+    <input type="text" id="billingPeriod" name="billingPeriod" required>
+
+    <label for="subscriptionAmount">Subscription Amount:</label>
+    <input type="text" id="subscriptionAmount" name="subscriptionAmount" required>
+
+    <button type="submit">Create Subscription</button>
   </form>
-</div>
-
 <script src="./script.js"></script>
 </body>
 </html>
